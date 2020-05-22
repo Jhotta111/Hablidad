@@ -4,7 +4,17 @@
         background-color: yellow;
     }
 }
+@media (orientation:portrait) {
+    html {
+        background-color: limegreen;
+    }
+}
 
+@media screen {
+    html {
+        background-color: lightcoral;
+    }
+}
 body {
     background-color: salmon;
 }
@@ -15,7 +25,7 @@ header {
     background-color: lightblue;
     text-align: center;
     color: red;
-
+    text-shadow: 0.3em 0.3em 0.09em #333
 }
 
 /*Nava*/
@@ -60,6 +70,13 @@ ol {
     text-align: left;
 }
 
+p#reset_color {
+    counter-reset: cuenta-colores;
+}
+p#list::before {
+    content: counter(cuenta-colores);
+    counter-increment: cuenta-colores;
+}
 /*Section dos*/
 
 section.sec2 {
