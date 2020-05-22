@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@media (orientation: landscape) {
+    html {
+        background-color: yellow;
+    }
+}
 
 body {
     background-color: salmon;
@@ -7,7 +12,7 @@ header {
     font-family: 'Zhi Mang Xing', cursive;
     font-size: 130%;
     height: 67px;
-    background-color: darkcyan;
+    background-color: lightblue;
     text-align: center;
     color: red;
 
@@ -16,10 +21,15 @@ header {
 /*Nava*/
 nav {
     text-align: center;
+    margin-top: 15px;
+    color: black
+    ;
 }
-
+a{
+    color: black;
+}
 p#nav {  
-    background-color: darkcyan;
+    background-color: lightblue;
     display: inline;
     margin-right: 10px;
 }
@@ -46,12 +56,15 @@ li#nav {
 section.sec1 {
     background-color: wheat ;
 }
+ol {
+    text-align: left;
+}
 
 /*Section dos*/
 
 section.sec2 {
-    background-color: deepskyblue;
-    height: 200px;
+    background-color: lightblue;
+    height: 220px;
 }
 
 table,th,td {
@@ -61,9 +74,15 @@ table,th,td {
 }
 table {
     width: 35%;
+    height: 105px;
 }
 p#color:hover,td#color:hover {
     background-color: yellow;
+    color: black;
+}
+
+td,th {
+    height: 50%;
 }
 input {
     background-color: white;
@@ -85,18 +104,21 @@ hr {
     background-color: blue;
     height: 15px;
     width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 41%;
+    margin-left: 9%;
 
 }
 
+/*Section tres*/
 section#sec3 {
     background-color: chocolate;
-    border-top: darkgoldenrod 5px dotted;
-    border-bottom: yellow 5px dashed;
-    border-left: red 15px solid;
+    border-top: rgb(255, 183, 0) 15px dotted;
+    border-bottom: yellow 15px dashed;
+    border-left: red 35px solid;
+    border-right: red 35px solid;
     height: 35px;
     text-align: center;
+    color: yellow;
 }
 
 footer {
