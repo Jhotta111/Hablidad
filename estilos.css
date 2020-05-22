@@ -66,15 +66,13 @@ li#nav {
 section.sec1 {
     background-color: wheat ;
 }
-ol {
-    text-align: left;
-}
+
 
 p#reset_color {
     counter-reset: cuenta-colores;
 }
 p#list::before {
-    content: counter(cuenta-colores);
+    content: counter(cuenta-colores) "."; ;
     counter-increment: cuenta-colores;
 }
 /*Section dos*/
